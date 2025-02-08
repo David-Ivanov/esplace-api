@@ -14,7 +14,7 @@ bot.onText(/\/start/, (msg) => {
     bot.sendMessage(msg.chat.id, "Вітаємо у EsPlace", {
         reply_markup: {
             inline_keyboard: [
-               [ {text: 'Зробити замовлення', web_app: {url: 'https://google.com'}}]
+               [ {text: 'Зробити замовлення', web_app: {url: 'https://esplace-web-app.onrender.com'}}]
             ]
         }
     })
