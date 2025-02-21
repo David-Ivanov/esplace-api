@@ -15,9 +15,8 @@ export const createOrderSchema = Joi.object({
         "string.min": "Мінимальна длина адреси 10 символ",
         "string.max": "Максимальна длина адреси 150 символів"
     }),
-    number: Joi.string().length(13).required().trim().messages({
-        "any.required": "Номер обовʼязковий",
-        "string.length": "Длина номеру має бути 13 символів"
+    number: Joi.string().required().trim().messages({
+        "any.required": "Номер обовʼязковий"
     }),
     comment: Joi.string().min(1).max(50).trim().messages({
       "string.base": "Коммнтар має бути строкою"
