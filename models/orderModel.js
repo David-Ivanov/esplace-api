@@ -15,7 +15,8 @@ const order = new Schema({
     },
     comment: {
         type: String,
-        default: null
+        default: null,
+        require: false
     },
     products: [{
         productId: {
