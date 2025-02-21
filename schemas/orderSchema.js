@@ -18,7 +18,7 @@ export const createOrderSchema = Joi.object({
     number: Joi.string().required().trim().messages({
         "any.required": "Номер обовʼязковий"
     }),
-    comment: Joi.string().min(1).max(50).trim().messages({
+    comment: Joi.string().min(1).max(500).trim().messages({
       "string.base": "Коммнтар має бути строкою"
     })
   });
