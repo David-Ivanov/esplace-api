@@ -1,12 +1,13 @@
 {
-  "name": "esplace-bot",
+  "name": "esplace-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node ./app.js",
-    "dev": "nodemon ./server.js"
+    "dev": "nodemon ./server.js",
+    "ngrok": "ngrok http 3030"
   },
   "keywords": [],
   "author": "Ivanov David <ivanovdavid905@gmail.com>",
@@ -15,6 +16,7 @@
     "nodemon": "^3.1.9"
   },
   "dependencies": {
+    "axios": "^1.7.9",
     "cloudinary": "^2.5.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
@@ -25,6 +27,7 @@
     "mongoose": "^8.9.5",
     "morgan": "^1.10.0",
     "nanoid": "^5.0.9",
-    "node-telegram-bot-api": "^0.63.0"
+    "ngrok": "^5.0.0-beta.2",
+    "node-telegram-bot-api": "^0.66.0"
   }
 }
